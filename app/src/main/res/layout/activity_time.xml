@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F3DE"
     tools:context=".TimeActivity">
 
     <EditText
@@ -12,12 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:ems="10"
-        android:hint="Enter Currency in Rupees"
+        android:hint="@string/enter_time_in_hours"
         android:inputType="numberDecimal"
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +31,8 @@
         android:layout_marginTop="108dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/black"
-        android:text="Convert"
+        android:text="@string/convert"
+        android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,17 +42,19 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/currencytext"
+        android:id="@+id/timetext"
         android:layout_width="350dp"
         android:layout_height="400dp"
-        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:text=""
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
 </androidx.constraintlayout.widget.ConstraintLayout>

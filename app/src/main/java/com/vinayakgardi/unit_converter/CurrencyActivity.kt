@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlin.text.Typography.dollar
-import kotlin.text.Typography.euro
+
 
 class CurrencyActivity : AppCompatActivity() {
 
@@ -15,15 +14,15 @@ class CurrencyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_currency)
-//
+
         val convert : Button = findViewById(R.id.currencyConvert)
         val cedittext : EditText = findViewById(R.id.cedittext)
         val currencytext : TextView = findViewById(R.id.currencytext)
 
 
-//
+
         convert.setOnClickListener {
-            currencytext.setText("")
+            currencytext.text=""
             val rupee : Float =  cedittext.text.toString().toFloat()
             val dollar : Float = rupee * 0.012f
             val euro  : Float = rupee *0.011f

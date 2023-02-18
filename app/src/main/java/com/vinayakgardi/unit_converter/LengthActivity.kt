@@ -2,7 +2,6 @@ package com.vinayakgardi.unit_converter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -21,7 +20,7 @@ class LengthActivity : AppCompatActivity() {
 
 
         convert.setOnClickListener {
-            lengthtext.setText("")
+            lengthtext.text =""
             val meter : Float = edittext.text.toString().toFloat()
             val cm : Float= meter * 100.00f
             val inch : Float =meter *39.37f

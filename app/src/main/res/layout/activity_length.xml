@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F3DE"
     tools:context=".LengthActivity">
 
     <EditText
@@ -13,11 +14,11 @@
         android:layout_marginTop="108dp"
         android:ems="10"
         android:inputType="number"
-        android:textSize="15dp"
+        android:textSize="18sp"
         android:text=""
         android:textColor="@color/black"
         android:textAlignment="center"
-        android:hint="Enter length in meters"
+        android:hint="@string/enter_length_in_meters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +31,7 @@
         android:layout_marginTop="108dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/black"
-        android:text="Convert"
+        android:text="@string/convert"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +47,8 @@
         android:layout_marginTop="126dp"
         android:textColor="@color/black"
         android:textAlignment="center"
-        android:textSize="20dp"
-
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

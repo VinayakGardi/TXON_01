@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
+
 
 class MainActivity : AppCompatActivity() {
     private var length : Button ?= null
@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        length = findViewById<Button>(R.id.length)
-        weight = findViewById<Button>(R.id.weight)
-        currency = findViewById<Button>(R.id.currency)
-        time = findViewById<Button>(R.id.time)
+        length = findViewById(R.id.length)
+        weight = findViewById(R.id.weight)
+        currency = findViewById(R.id.currency)
+        time = findViewById(R.id.time)
 
 
         length?.setOnClickListener {
