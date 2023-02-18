@@ -21,14 +21,21 @@ class LengthActivity : AppCompatActivity() {
 
 
         convert.setOnClickListener {
-            val m =  edittext.text.toString()
-            var meter : Double = m.toDouble()
-            val cm : Double= meter * 100.00
-            val inch : Double =meter *39.3701
-            val foot : Double = meter * 3.28084
-            val km : Double = meter * 0.001
-            val mile : Double = meter *0.000621371
-            val mm : Double = meter * 1000.0
+            lengthtext.setText("")
+            val meter : Float = edittext.text.toString().toFloat()
+            val cm : Float= meter * 100.00f
+            val inch : Float =meter *39.37f
+            val foot : Float = meter * 3.281f
+            val km : Float = meter * 0.001f
+            val mile : Float = meter / 1609f
+            val mm : Float = meter * 1000.0f
+
+            lengthtext.append("length is Kilometer is : $km km \n")
+            lengthtext.append("length is Centimeter is : $cm cm \n")
+            lengthtext.append("length is Millimeter is : $mm mm\n")
+            lengthtext.append("length is Miles is : $mile miles\n")
+            lengthtext.append("length is Inch is : $inch inches\n")
+            lengthtext.append("length is Foot is : $foot feets\n")
 
 
 

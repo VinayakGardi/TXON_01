@@ -23,14 +23,20 @@ class CurrencyActivity : AppCompatActivity() {
 
 //
         convert.setOnClickListener {
-            val rupee : Double =  cedittext.text.toString().toDouble()
-            val dollar : Double = rupee * 0.012
-            val euro  : Double = rupee *0.011
-            val egyptianpound : Double = rupee* 0.37
-            val dihram : Double = rupee *0.044
-            val jpnyen : Double = rupee * 1.63
-              currencytext.append("$dollar\n")
-            currencytext.append("$euro\n")
+            currencytext.setText("")
+            val rupee : Float =  cedittext.text.toString().toFloat()
+            val dollar : Float = rupee * 0.012f
+            val euro  : Float = rupee *0.011f
+            val egyptianpound : Float = rupee* 0.37f
+            val dihram : Float = rupee *0.044f
+            val jpnyen : Float = rupee * 1.62f
+
+            currencytext.append("Currency value in USD: $dollar $\n")
+            currencytext.append("Currency value in Euro : $euro Є\n")
+            currencytext.append("Currency value in EPound : $egyptianpound E£\n")
+            currencytext.append("Currency value in AED : $dihram AED\n")
+            currencytext.append("Currency value in JYen : $jpnyen ¥\n")
+
         }
 //
     }
